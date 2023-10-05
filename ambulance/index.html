@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ambulance Tracker</title>
+  <style>
+    /* Overall Page */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Container */
+    .container {
+      flex: 1;
+    }
+
+    /* Title */
+    header {
+      text-align: center;
+      background-color: red;
+      padding: 20px;
+      font-size: 2em;
+      color: white;
+    }
+
+    /* Menu Bar */
+    nav {
+      text-align: center;
+      padding: 14px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    nav a {
+      display: inline-block;
+      color: black;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: lightgrey;
+      color: black;
+    }
+
+    /* Content Box */
+    .content-box {
+      background-color: red;
+      color: white;
+      padding: 50px;
+      width: 60%;
+      margin: 100px auto;
+      text-align: center;
+      border-radius: 25px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .content-box button {
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 12px;
+    }
+
+    /* Chatbot */
+.chatbot {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background: url('chatbot.png') no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+    animation: chatbot-animation 1.5s infinite alternate;
+  }
+  
+
+    @keyframes chatbot-animation {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.2); }
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: red;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Title -->
+    <header>Ambulance Tracking System</header>
+
+    <!-- Menu Bar -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Settings</a>
+      <a href="#">Ambulance</a>
+      <a href="#">Staff</a>
+      <a href="#">Driver</a>
+      <a href="#">Police</a>
+    </nav>
+
+    <!-- Content Box -->
+    <div class="content-box">
+      <h2>"Anytime Anwhere"</h2>
+      <p> E-Ambulance app designed to save lives efficiently and quickly.</p>
+      <button>Request Ambulance</button>
+      <button>Learn More</button>
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div class="chatbot"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>All Rights Reserved &copy; 2023</footer>
+
+</body>
+</html>
